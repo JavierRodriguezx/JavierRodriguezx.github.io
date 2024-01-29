@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=, maximum-scale=1">
+    <title>Mi pagina web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="scroll.css">
+    <script src="https://kit.fontawesome.com/9c2f7fdcfc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="responsive.css">
+    <script src="menu.js" defer></script>
+    
+ 
+</head>
+<body>
+    <!--Layout Principal-->
+    <div class="layout">
+        <!--Barra lateral (info usuario)-->
+        <aside class="layout__aside">
+                    <section class="aside__user-info">
+                        <!--Informacion general usuario-->
+                        <div class="user-info__general">
+                            <div class="user-info__container-image">
+                                <img src="img/imgcarlos.jpg" alt="tabla" width="200px" height="200px">
+                            </div>
+                            <h2 class="user-info__name">Javier Rodriguez</h2>
+                            <h4 class="user-info__job">Desarrollador Web</h4>
+        
+                        </div>
+                        <!--Menu de navegacion-->
+                        <nav class="layout__menu">
+                            <ul class="menu__list">
+                                <li class="menu__option">
+                                    <a href="index.html" class="menu__link">
+                                        <i class="menu__icon fa-solid fa-house"></i>
+                                        <span class="menu__overlay">Home</span
+                                    </a>
+                                </li>
+                                <li class="menu__option">
+                                    <a href="sobre-mi.html" class="menu__link">
+                                        <i class="menu__icon fa-solid fa-user"></i>
+                                        <span class="menu__overlay">sobre mi</span>
+        
+                                    </a>
+                                </li>
+                                <li class="menu__option">
+                                    <a href="curriculum.html" class="menu__link">
+                                        <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                        <span class="menu__overlay">Curriculum</span>
+        
+                                    </a>
+                                </li>
+                                <li class="menu__option">
+                                    <a href="portafolio.html" class="menu__link">
+                                        <i class="menu__icon fa-solid fa-briefcase"></i>
+                                        <span class="menu__overlay">Portafolio</span>
+        
+                                    </a>
+                                </li>
+                              
+                                <li class="menu__option">
+                                    <a href="blog/inicio.html" class="menu__link">
+                                        <i class="menu__icon fa-solid fa-book"></i>
+                                        <span class="menu__overlay">Blog</span>
+        
+                                    </a>
+                                </li>
+                                <li class="menu__option">
+                                    <a href="contacto.html" class="menu__link">
+                                        <i class="menu__icon fa-solid fa-envelope"></i>
+                                        <span class="menu__overlay">contacto</span>
+        
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--Links a redes sociales-->
+                        <div class="user-info__links">
+                            <ul class="user-links__social">
+                                <li class="social__option">
+                                    <a href="#" class="social__link">
+                                        <i class="social__icon fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li class="social__option">
+                                    <a href="#" class="social__link">
+                                        <i class="social__icon fa-brands fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li class="social__option">
+                                    <a href="#" class="social__link">
+                                        <i class="social__icon fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Boton del curriculum-->
+                        <div class="user-info__buttons">
+                            <a href="#" class="user-info__btn">Descargar CV</a>
+        
+                        </div>
+                        <!--pie de pagina-->
+                        <footer class="user-info__fooster">&copy; 2023 Javier Rodriguez</footer>
+                    </section>
+        
+        
+        </aside>
+            <!--Menu responsive-->
+        <div class="layout__menu-toggle">
+            
+            <i class="menu-toggle_icon fa-solid fa-bars"></i>
+            <i class="menu-toggle_icon fa-solid fa-xmark"></i>
+        </div>
+
+        <!--Esto Se modifica-->
+        <!--Contenido principal-->
+        <main class="layout__content">
+            <section class="content__page content__resume">
+
+                <header class="resume__header">
+                    <h2 class="resume__title">Curriculum</h2>
+                </header>
+
+                <!--Contenedor resume-->
+                <div class="resume__container">
+                    <img src="./img/Curriculum Carlos Javier Huesca.png" alt="">
+                    
+                </div>
+            </section>
+
+
+
+        </main>
+    </div>
+</body>
+</html>

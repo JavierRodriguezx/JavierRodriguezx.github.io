@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=, maximum-scale=1">
+    <title>Mi pagina web</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="scroll.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9c2f7fdcfc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="responsive.css">
+    <script src="menu.js" defer></script>
+</head>
+<body>
+    <!--Layout Principal-->
+    <div class="layout">
+        <!--Barra lateral (info usuario)-->
+        <aside class="layout__aside">
+            <section class="aside__user-info">
+                <!--Informacion general usuario-->
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img src="img/imgcarlos.jpg" alt="tabla" width="200px" height="200px">
+                    </div>
+                    <h2 class="user-info__name">Javier Rodriguez</h2>
+                    <h4 class="user-info__job">Desarrollador Web</h4>
+
+                </div>
+                <!--Menu de navegacion-->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Home</span
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="sobre-mi.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">sobre mi</span>
+
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="curriculum.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">curriculum</span>
+
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+
+                            </a>
+                        </li>
+                      
+                        <li class="menu__option">
+                            <a href="blog/inicio.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-book"></i>
+                                <span class="menu__overlay">Blog</span>
+
+                            </a>
+                        </li>
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">contacto</span>
+
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--Links a redes sociales-->
+                <div class="user-info__links">
+                    <ul class="user-links__social">
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Boton del curriculum-->
+                <div class="user-info__buttons">
+                    <a href="#" class="user-info__btn">Descargar CV</a>
+
+                </div>
+                <!--pie de pagina-->
+                <footer class="user-info__fooster">&copy; 2023 Javier Rodriguez</footer>
+            </section>
+        </aside>
+
+        <!--Menu responsive-->
+        <div class="layout__menu-toggle">
+            
+            <i class="menu-toggle_icon fa-solid fa-bars"></i>
+            <i class="menu-toggle_icon fa-solid fa-xmark"></i>
+        </div>
+
+
+        <!--Esto Se modifica-->
+        <!--Contenido principal-->
+        <main class="layout__content">
+            <section class="content__page content__about">
+                <header class="about__header">
+                    <h2 class="about__title">Sobre <span class="title__color">Mi</span></h2>
+                </header>
+                <section class="about__personal-info">
+                    <article class="personal-info__bio"> 
+                        <p class="personal-info__description">
+                            Soy un apasionado desarrollador web autodidacta, con un enfoque
+                             creativo y una sólida base técnica. Mi carrera se
+                              ha centrado en la creación de soluciones digitales
+                               innovadoras que combinen diseño atractivo con
+                                funcionalidad sólida. 
+                        </p>
+                    </article>
+                    <!--Informacion Personal-->
+                    <div class="personal-info__data">
+                        <ul class="personal-info__list">
+                            <li class="personal-info__option">
+                                <span class="personal-info__title">Edad:</span>
+                                <span class="personal-info__value">28</span>
+                            </li>
+                            <li class="personal-info__option">
+                                <span class="personal-info__title">Pais:</span>
+                                <span class="personal-info__value">Mexico</span>
+                            </li>
+                            <li class="personal-info__option">
+                                <span class="personal-info__title">Direccion:</span>
+                                <span class="personal-info__value">Veracruz</span>
+                            </li>
+                            <li class="personal-info__option">
+                                <span class="personal-info__title">Correo:</span>
+                                <span class="personal-info__value">carlos.rodr95@outlook.com</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+
+
+                 <!--Titulo-->
+                <section class="about__services">
+                    <header class="services__hader">
+                        <h3 class="services__title"> Lo que
+                            <span class="title__color">hago</span>
+                        </h3>
+
+                    </header>
+                    <!--Servicios-->
+                    <div class="services__container">
+                        <!--Programacion-->
+                        <article class="services__service">
+                            <div class="service__icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+
+                            <div class="service__content">
+                                <h4 class="service__title">Programacion</h4>
+                                <p class="service__description">
+                                    Poseo conocimientos en el desarrollo web utilizando una
+                                     variedad de lenguajes y tecnologías, incluyendo HTML5, CSS3,
+                                      JavaScript (ES6+). También tengo conocimientos
+                                       en frameworks como React.
+                                </p>
+                            </div>
+                        </article>
+                        <!--Formacion-->
+                        <article class="services__service">
+                            <div class="service__icon">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                            </div>
+                            <div class="service__content">
+                                <h4 class="service__title">Formacion</h4>
+                                <ul class="service-list">
+
+                                    <li class="service-list__option">
+                                        <span class="service-list__colorsub">Universidad Felipe Villanueva, Poza Rica. Veracruz.</span><p class="service-list__uni">Ingenieria en sistemas computaciones.</p>
+                                        <span class="service-list__colorsub2">2019-2022</span>
+                                    </li>
+                                    <li class="service-list__option"">
+                                        <span class="service-list__colorsub">Preparatoria: Gabino barreda, Poza Rica. Veracruz.</span>
+                                        <br>
+                                        <span  class="service-list__colorsub2">2011-2014</span>
+                                    </li>
+                                    <li class="service-list__option"">
+                                        <span class="service-list__colorsub">Secundaria: Colegio Millennium, Poza Rica. Veracruz.</span>
+                                        <br>
+                                        <span class="service-list__colorsub2">2008-2011</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <!--Desarollo web-->
+                        <article class="services__service">
+                            <div class="service__icon">
+                                <i class="fa-solid fa-computer"></i>
+                            </div>
+                            <div class="service__content">
+                                <h4 class="service__title">Desarrollo web</h4>
+                                <p class="service__description">
+                                    Unque no tengo experiencia laboral formal, he dedicado tiempo
+                                     y esfuerzo a desarrollar habilidades sólidas en el ámbito del
+                                      desarrollo web. he adquirido experiencia práctica en la creación
+                                       de sitios web, desde la planificación hasta la implementación.
+                                        Esto ha fortalecido mi capacidad para resolver problemas y aprender
+                                         de manera autodidacta. Mi enfoque meticuloso y la atención a los
+                                          detalles se reflejan en la calidad de mis proyectos, donde me 
+                                          esfuerzo por crear interfaces intuitivas y funcionales. 
+                                </p>
+                            </div>
+                        </article>
+                        <!--Administracion-->
+                        <article class="services__service">
+                            <div class="service__icon">
+                                <i class="fa-solid fa-terminal"></i>
+                            </div>
+                            <div class="service__content">
+                                <h4 class="service__title">Administracion</h4>
+                                <p class="service__description">
+                                    Mi experiencia principal se encuentra en el desarrollo web, poseo habilidades transferibles que son fundamentales en roles administrativos. Soy una persona organizada y detallista, capaz de gestionar tareas de manera eficiente y cumplir con plazos establecidos.
+                                     Mi capacidad para aprender rápidamente y adaptarme a nuevas situaciones me permite abordar desafíos de manera efectiva.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                
+
+
+            </section>
+        </main>
+    
+    </div>
+</body>
+</html>

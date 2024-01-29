@@ -1,0 +1,39 @@
+
+.quicklinks{
+    font-size: 2rem;
+    margin-left: 7rem ;
+    overflow-y: auto;
+    height:  75vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    padding: 6rem 3rem;
+    color: var( --button-secondary-active);
+    
+}
+.quicklinks__titles{
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.quicklinks-item__title{
+    display: inline-block;
+    border-left: 1px solid var(--button-secondary-active);
+    padding: 0.6rem 2rem;
+    
+    
+}
+
+.quicklinks-item__title:hover{
+    color: var(--text-link);
+}
+
+.subtema{
+    transition: background-color 0.5s ease;
+    
+}
+
+.destacado{
+
+    background-color: rgba(255, 0, 0, 0.2);
+    border-left: 1px solid var(--button-secondary-border-red);
+}

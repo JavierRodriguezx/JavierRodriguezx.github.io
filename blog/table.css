@@ -1,0 +1,21 @@
+.table01 tbody tr:nth-child(odd){
+    background-color:#313131;
+}
+
+table{
+    width: 100%;
+    margin: 2rem;
+}
+
+table,
+th,
+td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th,
+td{
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+/*Scroll MOZ*/
+.aside-quicklinks{
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scrollbar) transparent;
+}
+
+
+/*Scroll CHROME*/
+.main-content::-webkit-scrollbar-track{
+    background: var(--color-background-scrollbar);
+}
+.main-content::-webkit-scrollbar{
+    width: 15px; 
+    
+    
+}
+.main-content::-webkit-scrollbar-thumb{
+    border: 2px solid transparent;
+    box-shadow: none;
+    
+    background: var(--color-scrollbar);
+}
+
+
+
+.quicklinks::-webkit-scrollbar-track{
+    background: var(--color-background-scrollbar);
+}
+
+.quicklinks::-webkit-scrollbar{
+    width: 15px; 
+    
+    
+}
+.quicklinks::-webkit-scrollbar-thumb{
+    border: 2px solid transparent;
+    box-shadow: none;
+    
+    background: var(--color-scrollbar);
+}
+
+
+
+

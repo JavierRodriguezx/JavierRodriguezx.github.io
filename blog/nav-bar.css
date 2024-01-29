@@ -1,0 +1,103 @@
+.nav__container{
+    
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid var(--border-primary);
+
+    
+
+}
+.nav__navbar{
+    
+    width: 1800px;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    margin: 0 auto;
+   
+}
+.nav-list{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+   
+    
+
+    
+   
+    
+}
+.nav__item{
+   margin-right: 4rem;
+   color: var(--button-secondary-active);
+   padding: 0.5rem;
+   border-radius: 0.5rem ;
+   border: 1px solid var(--background-primary);
+}
+.logo__fa{
+    font-size: 4rem;
+}
+.nav-container__logo{
+   padding: 0 2rem;
+   
+}
+
+
+
+/*Efectos*/
+.nav__item:hover{
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    background-color: rgba(255, 0, 0, 0.2);
+    color: var(--button-secondary-border-red);
+    
+}
+/*Ventana desplegable*/
+.nav-item--win{
+    position: relative;
+    
+}
+
+.nav-submenu--win{
+    width: 20rem;
+    position: absolute;
+    margin-top: 1.1rem ;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: var(--background-primary);
+    color: white;
+    opacity: 0;
+    display: none;
+    
+    
+    
+    
+}
+
+.nav__item:hover .nav-submenu--win{
+    
+    opacity: 1;
+    display: block;
+}
+
+    
+
+
+.submenu__p{
+    font-size: 2rem;
+    
+}
+.submenu__item{
+    
+    border-radius: 3px;
+    padding-bottom: 2rem 2rem;
+    padding: 1rem;
+    border-left: 2px solid red;
+}
+
+.submenu__item:hover{
+    background-color:#343434;
+    
+    
+}

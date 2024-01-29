@@ -10,16 +10,14 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/9c2f7fdcfc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="responsive.css">
+    <script src="map.js" defer></script>
     <script src="menu.js" defer></script>
-
 </head>
 <body>
-
-
     <!--Layout Principal-->
     <div class="layout">
         <!--Barra lateral (info usuario)-->
-        <aside class="layout__aside ">
+        <aside class="layout__aside">
             <section class="aside__user-info">
                 <!--Informacion general usuario-->
                 <div class="user-info__general">
@@ -49,7 +47,7 @@
                         <li class="menu__option">
                             <a href="curriculum.html" class="menu__link">
                                 <i class="menu__icon fa-solid fa-graduation-cap"></i>
-                                <span class="menu__overlay">Curriculum</span>
+                                <span class="menu__overlay">curriculum</span>
 
                             </a>
                         </li>
@@ -105,12 +103,7 @@
                 <!--pie de pagina-->
                 <footer class="user-info__fooster">&copy; 2023 Javier Rodriguez</footer>
             </section>
-
-
         </aside>
-
-
-        
         <!--Menu responsive-->
         <div class="layout__menu-toggle">
             
@@ -118,14 +111,107 @@
             <i class="menu-toggle_icon fa-solid fa-xmark"></i>
         </div>
 
+
+        <!--Esto Se modifica-->
         <!--Contenido principal-->
         <main class="layout__content">
-            <section class="content__page">
-                <h1 class="page__name">Javier Rodriguez Huesca</h1>
-                <h2 class="page__job">Desarrollador web</h2>
+            <section class="content__page content__contact">
+
+                <header class="contact__header">
+                    <h2 class="contact__title">Contacto</h2>
+                </header>
+
+                <!--Contacto-->
+
+                <div class="contact__container">
+
+                    <section class="contact__info">
+
+                        <div class="contact__data">
+                            <i class="contact__icon fa-solid fa-location-dot"></i>
+                            <h2 class="contact__subtitle">Veracruz</h2>
+                        </div>
+                        <div class="contact__data">
+                            <i class="contact__icon fa-solid fa-phone"></i>
+                            <h2 class="contact__subtitle">782983982</h2>
+                        </div>
+                        <div class="contact__data">
+                            <i class="contact__icon fa-solid fa-envelope"></i>
+                            <h2 class="contact__subtitle">carlos.rodr95@outlook.com</h2>
+                        </div>
+                        <div class="contact__data">
+                            <i class="contact__icon fa-solid fa-circle-check"></i>
+                            <h2 class="contact__subtitle">Ing. en sistemas Computacionales</h2>
+                        </div>
+                       
+                       
+                    </section>
+
+                    
+                    <section class="contact__form-box">
+                        <div class="contact__map" id="load-iframe-map">
+                            <span class="loader"></span>
+                           
+
+                        </div>
+                        <header class="contact__form-header">
+                            <h3 class="form-header__title">Como puedo <span class="title__color">Ayudarte</span></h3>
+                        </header>
+
+                        <form class="contact__form">
+
+                            <div class="form__container">
+
+                                <section class="form__left">
+
+                                    <div class="form__group">
+                                        <input type="text" class="form__input" name="name" required placeholder="name">
+                                        <label for="name" class="form__label">Nombre</label>
+                                    </div>
+                                    
+                                    <div class="form__group">
+                                        <input type="email" class="form__input" name="email" required placeholder="email">
+                                        <label for="email" class="form__label">Email</label>
+                                    </div>
+                                    
+                                    <div class="form__group">
+                                        <input type="text" class="form__input" name="subject" required placeholder="subject">
+                                        <label for="name" class="form__label">Asunto</label>
+                                    </div>
+
+                                </section>
+                                
+                                    <section class="form__rigth">
+                                        <div  class="form__group">
+                                            <textarea class="form__input form__input--textarea" name="message" requiered placeholder="mensaje"></textarea>
+                                            <label for="message" class="form__label">Mensaje</label>
+                                        </div>
+                                    
+                                    </section>
+
+                            </div>
+                            <input type="submit" class="form__button" value="enviar mensaje">
+                        </form>
+
+                    </section>
+                </div>
+
+               
+
+
+
+
+
+
+
+
+
+
             </section>
+
+
+
         </main>
-    
     </div>
 </body>
 </html>
